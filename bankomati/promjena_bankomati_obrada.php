@@ -26,7 +26,7 @@ $db = connect();
 
 $sql = "UPDATE `bankomati` 
 SET `br_bankomata` = '". $_POST['br_bankomata']."', `mjesto_bank` = '". $_POST['mjesto_bank']."',`adr_bankomata` = '". $_POST['adr_bankomata']."',`tip_bank` = '". $_POST['tip_bank']."'
-WHERE `bankomati`.`br_bankomata` = ". $_POST['br_bankomata'].";";
+";
 
 
 // izvrši UPDATE 

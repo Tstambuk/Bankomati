@@ -39,7 +39,7 @@ if(empty($data_arr)) {
 } else {
 
 	// prikazi podatke iz asocijativnog polja kao HTML tablicu
-	$nazivi_stupaca = array('Punjenja ID', 'Br. bankomata', 'Apoen','Apoen','Količina prvog apoena','Količina drugog apoena', 'Datum punjenja');
+	$nazivi_stupaca = array('Br.specifikacije', 'Br. bankomata', 'Apoen','Apoen','Količina prvog apoena','Količina drugog apoena', 'Datum punjenja');
 	showHTMLTableWithoutID_2($nazivi_stupaca, $data_arr);
 
 	// pobriši taj redak

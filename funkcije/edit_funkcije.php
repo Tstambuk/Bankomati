@@ -1,6 +1,4 @@
-<script type="text/javascript">
-function openRequestedPopup(){ window.open( 'showHTMLTableWithEditDeleteLink_1', 'width=545,height=326,resizable=yes,scrollbars=yes,status=yes');}
-</script>
+
 
 <?php
 /*********************************EDIT FUNKCIJE ZA BANKOMATI***************************************************/
@@ -106,10 +104,8 @@ function showHTMLTableWithEditDeleteLink($header_arr, $data_arr, $table_name) {
 	echo '</thead>';
 
 	echo '<tbody>';
-	$rbr = 1;
 	foreach($data_arr as $polja) {
 		echo "<tr>";
-			echo "<td>", $rbr++, ".</td>";
 			foreach ($polja as $vrijednost) {
 				echo "<td>", $vrijednost, "</td>";
 			}
@@ -158,10 +154,8 @@ function showHTMLTableWithEditDeleteLink($header_arr, $data_arr, $table_name) {
 	echo '</thead>';
 
 	echo '<tbody>';
-	$rbr = 1;
 	foreach($data_arr as $polja) {
 		echo "<tr>";
-			echo "<td>", $rbr++, ".</td>";
 			foreach ($polja as $vrijednost) {
 				echo "<td>", $vrijednost, "</td>";
 			}
@@ -238,10 +232,8 @@ function showHTMLTableWithEditDeleteLink_1($header_arr, $data_arr, $table_name) 
 	echo '</thead>';
 
 	echo '<tbody>';
-	$rbr = 1;
 	foreach($data_arr as $polja) {
 		echo "<tr>";
-			echo "<td>", $rbr++, ".</td>";
 			foreach ($polja as $vrijednost) {
 				echo "<td>", $vrijednost, "</td>";
 			}
@@ -317,12 +309,12 @@ function showHTMLTableWithEditDeleteLink_2($header_arr, $data_arr, $table_name) 
 	echo '<th colspan=2>Radnja</th>';
 	echo '</tr>';
 	echo '</thead>';
-
+         
 	echo '<tbody>';
-	$rbr = 1;
+	       $rbr = 1;
 	foreach($data_arr as $polja) {
 		echo "<tr>";
-			echo "<td>", $rbr++, ".</td>";
+		echo "<td>", $rbr++, ".</td>";
 			foreach ($polja as $vrijednost) {
 				echo "<td>", $vrijednost, "</td>";
 			}

@@ -26,7 +26,7 @@ $db = connect();
 // izvrši SELECT na bankomatima
 $data = executeSelect(
 	$db, 
-	'SELECT * FROM bankomati WHERE br_bankomata='.$_GET['id']
+	'SELECT * FROM bankomati WHERE id_bankomata='.$_GET['id']
 );
 
 // izvuci podatke kao asocijativno polje iz bankomata
@@ -44,7 +44,7 @@ if(empty($data_arr)) {
 	// pobriši taj redak
 	// pripremim SQL kod za promjenu
 
-	$sql = "DELETE FROM bankomati WHERE br_bankomata = ". $_GET['id'];
+	$sql = "DELETE FROM bankomati WHERE id_bankomata = ". $_GET['id'];
 
 	// izvrši DELETE na bankomatu
 	deleteSQL($db, $sql);

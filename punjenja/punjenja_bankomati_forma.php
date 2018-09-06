@@ -9,7 +9,7 @@ action="punjenja_bankomati_obrada.php"
 <input
 type="text" 
 name="br_bankomata" 
-value="<?php echo $data_arr[0][0]; ?>"
+value="<?php echo $data_arr[0][1]; ?>"
 STYLE="background-color: #E6E6E6;"
 readonly
 />

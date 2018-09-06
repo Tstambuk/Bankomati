@@ -5,7 +5,7 @@ action="promjena_bankomati_obrada.php"
 >
 <input
 type="hidden" 
-name="br_bankomata" 
+name="id_bankomata" 
 value="<?php echo $_GET['id']; ?>"
 />
 
@@ -15,7 +15,7 @@ value="<?php echo $_GET['id']; ?>"
 <input
 type="text" 
 name="br_bankomata" 
-value="<?php echo $data_arr[0][0]; ?>"
+value="<?php echo $data_arr[0][1]; ?>"
 />
 
 <br>&nbsp;
@@ -25,7 +25,7 @@ value="<?php echo $data_arr[0][0]; ?>"
 <input
 type="text" 
 name="mjesto_bank" 
-value="<?php echo $data_arr[0][1]; ?>"
+value="<?php echo $data_arr[0][2]; ?>"
 />
 
 
@@ -35,7 +35,7 @@ value="<?php echo $data_arr[0][1]; ?>"
 <input
 type="text" 
 name="adr_bankomata" 
-value="<?php echo $data_arr[0][2]; ?>"
+value="<?php echo $data_arr[0][3]; ?>"
 />
 <br>&nbsp;
 <br>&nbsp;
@@ -43,7 +43,7 @@ value="<?php echo $data_arr[0][2]; ?>"
 <input
 type="text" 
 name="tip_bank" 
-value="<?php echo $data_arr[0][3]; ?>"
+value="<?php echo $data_arr[0][4]; ?>"
 />
 <br>&nbsp;
 <br>&nbsp;

@@ -209,7 +209,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- Indexes for table `bankomati`
 --
 ALTER TABLE `bankomati`
- ADD PRIMARY KEY (`br_bankomata`), ADD KEY `br_bankomata` (`br_bankomata`), ADD KEY `br_bankomata_2` (`br_bankomata`), ADD KEY `adr_bankomata` (`adr_bankomata`);
+ ADD PRIMARY KEY (`id_bankomata`), ADD KEY `br_bankomata` (`br_bankomata`), ADD KEY `br_bankomata_2` (`br_bankomata`), ADD KEY `adr_bankomata` (`adr_bankomata`);
 
 --
 -- Indexes for table `korisnici`

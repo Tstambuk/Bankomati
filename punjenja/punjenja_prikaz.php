@@ -15,7 +15,7 @@ checkLoginWithMessage2();
 automaticLogout();
 
 // prikaži ispravno HTML zaglavlje sa naslovom
-showHTMLHeaderWithTitle('Punjenja');
+showHTMLHeaderWithTitle('Punjenje bankomata');
 
 // prikaži navigacijski meni
 showHTMLNavigationMenu();

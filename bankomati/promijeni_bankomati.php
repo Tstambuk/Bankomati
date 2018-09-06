@@ -21,7 +21,7 @@ $db = connect();
 // izvrši SELECT na bankomatima
 $data = executeSelect(
 	$db, 
-	'SELECT * FROM bankomati WHERE br_bankomata='.$_GET['id']
+	'SELECT * FROM bankomati WHERE id_bankomata='.$_GET['id']
 );
 
 
@@ -38,7 +38,7 @@ if(empty($data_arr)) {
 } else {
 
 	// prikazi podatke iz asocijativnog polja kao HTML tablicu
-	$nazivi_stupaca = array('Br.bankomata', 'Mjesto', 'Adresa','Tip');
+	$nazivi_stupaca = array('Rbr','Br.bankomata', 'Mjesto', 'Adresa','Tip');
 	showHTMLTableWithoutID($nazivi_stupaca, $data_arr);
 
 	// HTML forma za promijenu
