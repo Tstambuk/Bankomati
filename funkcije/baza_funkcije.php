@@ -14,7 +14,7 @@ function connect() {
 		echo $baza->connect_errno;
 		echo ' ';
 		echo $baza->connect_error;
-		die();
+		
 	}
 
 	/* change character set to utf8 */
