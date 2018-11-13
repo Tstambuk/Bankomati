@@ -14,10 +14,17 @@ $db = connect();
   {
     $username = $_POST["username"];
     $password = $_POST["password"];
+    $password2 = $_POST["password2"];
 
     $username = mysqli_real_escape_string($db, $username);
     $password = mysqli_real_escape_string($db, $password);
     $password = getPasswordHash($password);
+    $password2 = mysqli_real_escape_string($db, $password2);
+    $password2 = getPasswordHash($password2);
+    if ($password != $password2) {
+echo("Passwordi se ne poklapaju!");
+exit;
+}
     
     
     $sql="SELECT * FROM login WHERE username='$username'";
@@ -29,7 +36,7 @@ $db = connect();
     }
     else
     {
-      $query = mysqli_query($db, "INSERT INTO login (username, password)VALUES ('$username', '$password')");
+      $query = mysqli_query($db, "INSERT INTO login (username, password, password2)VALUES ('$username', '$password', '$password2')");
       if($query)
       {
         $msg = "Jupi....Sad ste registrirani.";
