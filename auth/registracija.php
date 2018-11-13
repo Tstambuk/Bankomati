@@ -19,7 +19,8 @@ showHTMLHeaderWithTitle('Registracija');
 
 <label for="password">Password</label>
 <input name="password" type="password" class="input" size="25" required />
-
+<label for="password">Ponovi Password</label>
+<input name="password2" type="password" class="input" size="25" required />
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <input
   type="submit"
